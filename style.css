@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+}
+
+.intro{
+    height:100%;
+    width: 100%;
+    top: 0;
+    margin:0;
+    background-image: url(./img/background.jpg);
+    display: table;
+    background-size: cover;
+    width: 100%;
+    max-width: none;
+}
+
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+    max-width: none;
+    width: 100%;
+}
+
+.intro .content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    top: 0;
+}
+
+.intro h1 {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 300%;
+    font-weight: 400;
+    color: #cc0052;
+    line-height:70%;
+}
+
+.btn{
+    font-family: 'Mountserrat', sans-serif;
+    font-size: 120%;
+    font-weight: 200;
+    text-decoration: none;
+    border:solid lightslategray 1px;
+    padding: 10px 50px;
+    border-radius: 30px;
+    transition: all 0.3s;
+    display: table;
+    background-color: black;
+    color: grey
+}
+.btn:hover{
+    color:#cc0052;
+    border-color: #cc0052;
+}
+
+    input::-moz-placeholder {
+      color: #cc0052;
+      opacity: 1;
+    }
+   
+.between{
+    width: 100%;
+    /*height: 30%;*/
+    background-color:  #cc0052;
+    margin:auto;
+    top:0;
+}
+
+
+.between p {
+    font-family: 'Yantramanav',sans-serif;
+    margin-top: 0px;
+    font-size: 200%;
+    font-weight: 800;
+    color: wheat;
+    top:0;
+    display: table;
+    padding: 10px;
+    text-align: center;
+    line-height:1.5;}
+
+.between-sub-section{
+    display:inline-block;
+    width:200px;
+    padding:10px;
+    background-color:white;
+    font-family: 'Yantramanav',sans-serif;
+    margin-top: 0px;
+    font-size: 200%;
+    font-weight: 800;
+}
+
+.fixed-header {
+    min-height: 60px;
+    width:100%;
+    height:7%;
+    background-color:rgba(0, 0, 0, 0.7);
+    position: fixed;
+    color: wheat;
+    padding:10px;
+    }
+
+.search {
+    position: relative;
+    display: inline;
+    max-width:300px;
+    top:50;
+    font-family: 'Yantramanav',sans-serif;
+    font-size: 1em;
+    text-align: left;
+    } 
+
+.right {
+float:right;
+}
+
+.left {
+    position: absolute;
+  top:5px;
+    float: left;
+    }
+
+
+a  { color: inherit; text-decoration: none } 
+
+li { 
+    display:inline;
+    font-family: 'Yantramanav',sans-serif;
+    font-size: 1em;
+    list-style: none;
+    color: lightslategray;
+    border-color: #cc0052;
+    max-width: 600px;
+    padding-right: 30px;
+}
+li:hover {
+    color:#cc0052;
+    border-color: #cc0052;
+}
+
+.chat{
+
+    font-family: 'Mountserrat', sans-serif;
+    font-size: 120%;
+    font-weight: 200;
+    text-decoration: none;
+
+    border:solid lightslategray 1px;
+    border-radius: 30;
+    background-color: black;
+    color: grey;
+
+    bottom: 20;
+    right:20;
+    width:200px;
+    z-index: 9999;
+    position: fixed;
+}
+
+input {
+	outline: none;
+}
+input[type=search] {
+    top:50%;
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+.add-event { background: black;
+  color: white;
+  float: left;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+}
+
+
+input[type=search] {
+	background: rgba(0, 0, 0, 0.5) url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px black;
+	padding: 9px 10px 9px 36px;
+	width: 50px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+input[type=search]:focus {
+	width: 160px;
+	background-color: rgb(1, 1, 1, 0.5);
+	border-color: #cc0052;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+
+
+    /*--- Media Queries --*/
+    @media screen and (max-width: 900px) {
+
+    }
+    @media screen and (max-width: 768px) {
+    .search{
+        vertical-align: left;
+        padding:10px;
+        font-family: 'Yantramanav',sans-serif;
+        font-size: .5em;
+        text-align: left;
+    }
+    ul{padding-bottom: 20px;
+        vertical-align: right;
+        font-family: 'Yantramanav',sans-serif;
+        float: right;
+    }
+    a { color: inherit; text-decoration: none } 
+
+    li {
+        padding: 10px;
+        font-family: 'Yantramanav',sans-serif;
+        font-size: .5em;
+        display: inline;
+        list-style: none;
+        color: wheat;
+        border-color: #cc0052;
+        max-width: 600px
+    }
+    li:hover {
+    color:#cc0052;
+        border-color: #cc0052;
+    }
+    }
+@media screen and (max-width: 480px) {
+	
+}
