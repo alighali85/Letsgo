@@ -45,7 +45,7 @@
 .artistlist {
   position: absolute;
   width: 100%;
-  min-width:320px;
+  min-width:320px;          
   max-width: 400px;
   left: 0;
   right: 0;
