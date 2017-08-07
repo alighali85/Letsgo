@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,600,800" rel="stylesheet');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'open sans';
+}
+
+.header-container {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently*/
+    display: flex;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+    color: white;
+    }
+
+.left-part, ul , .right-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+} 
+
+ul li {
+    z-index: 1;
+    padding: 5px;
+    height: 20px;
+    width:100px; 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    cursor:pointer;
+    transition:0.2s;
+    font-size: 12px;
+}
+
+li:hover {
+    align-items: center;
+    font-size: 14px;
+}
+
+a {
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+    color: inherit;
+    text-decoration:none;
+    transition:100ms;
+    margin-top: 0px;
+}
+
+a:hover {
+    font-size: 16px;
+}
+
+.search {
+    width: 50px;
+    background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%),url('../img/search.png');
+    background-repeat:no-repeat;
+    border-radius: 15px;
+    border:0px;
+    padding: 0 15px;
+    height: 30px;
+    margin-left: 10px;
+    transition: width 100ms;
+    color:white;
+    background-blend-mode: color-dodge;
+    background-position: 50%;
+}
+
+ul {
+    transition: opacity 200ms;
+ }
+
+.search:hover ~ ul {
+    position:relative;
+    opacity: 0;
+}
+
+.search:hover {
+    width: 250px;
+    z-index: 10;
+    border: 0px solid white;
+    opacity: 1;
+    background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+::-webkit-input-placeholder {
+  color: white;
+  font-size: 0px;
+  margin-left: 20px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+  font-size: 0px;
+  margin-left: 20px;
+}
+
+.main-container {
+    display: flex;
+    height:45vh;
+    text-align: center;
+    align-items: center;
+    margin: 0px;
+    padding-top: 400px;
+    background-image:url("../img/sunset.jpg");
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently*/
+}
+
+.box-center {
+    justify-content: space-around;
+    position: relative; 
+    bottom: -150px;
+    left: 50%;
+    color: black;
+    width: 75%;
+    font-size:22px;
+    display: flex;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    height: 200px;
+}
+
+.app-name {
+    color:white;
+    font-size: 40px;
+    position: absolute;
+    top:25%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+
+.go-to-app{
+    font-size: 16px;
+    position: absolute;
+    top:35%;
+    left: 50%;
+    transform:translate(-50%, -50%);  
+    background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    border-radius: 50px;
+    padding:10px 20px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    transition: font-weight  0.5s;
+}
+
+.go-to-app:hover {
+     color: #2A2B49;
+     background: #2cb5e8;
+}
+
+.card {
+    position: relative;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px 10px;
+    width: 200px;
+    height: 100%;
+    color: white;
+    box-sizing: border-box;
+    border: 2px solid white;
+    transition:margin-top .2s;
+}
+
+.card:hover {
+    margin-top:-20px;
+}
+
+.side-bar{
+    display:none;
+}
+
+.text{
+    background-color:#02053A;
+    left:50%;
+    padding-left:10px;
+    padding-top:30px;
+    position:relative;
+    width:75%;
+    transform: translate(-50%);
+    color:white;
+}
