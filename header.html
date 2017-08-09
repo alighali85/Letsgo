@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 
 <head>
-    <meta name="viewport=device">
+    <meta name="viewport=device" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./src/header.css">
+    <link rel="stylesheet" type="text/css" href="./animate.css/">
+    <script type="text/javascript" src="./page-handlers.js"></script>
 </head>
 
-<body>
+<body onload="onload()">
     <div class="header-container">
         <div class="left-part">
             <input class="search" type="search" placeholder="search here">
@@ -17,12 +20,12 @@
             </ul>
         </div>
         <div class="right-part">
-            <span class="add-new"><a href="#">New Project</a></span>
+            <span class="add-new animated bounce"><a href="#">New Project</a></span>
             <img style="margin: 10px" ; src="./img/add-button.png" ; width="20px">
         </div>
     </div>
     <div class="main-container">
-        <div class="app-name">Start to Enhance The Life</div>
+        <div class="app-name rotateIn">Start to Enhance The Life</div>
         <a onclik="myFunction()" class="go-to-app" href="https://play.google.com/store/apps/details?id=com.lenovo.anyshare.gps">Go to the app</a>
         <div class="box-center">
             <div class="card">
@@ -57,4 +60,5 @@
     fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
     himenaeos.
 </footer>
+
 </div>

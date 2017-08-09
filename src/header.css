@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,600,800" rel="stylesheet');
+@-ms-viewport{
+  width: device-width;
+}
 
 body {
     margin: 0px;
@@ -21,6 +24,7 @@ body {
     justify-content:space-between;
     align-items: center;
     color: white;
+    transition: background 0.3s ease-in-out;
     }
 
 .left-part, ul , .right-part {
