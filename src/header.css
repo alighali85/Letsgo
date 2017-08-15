@@ -75,7 +75,7 @@ a:hover {
     padding: 0 15px;
     height: 30px;
     margin-left: 10px;
-    transition: width 100ms;
+    transition: width 100ms ease-in-out;
     color:white;
     background-blend-mode: color-dodge;
     background-position: 50%;
@@ -108,13 +108,17 @@ ul {
   margin-left: 20px;
 }
 
+#new-project{
+    height:100vh;
+    background-color:white;
+    z-index: 9999;
+}
 .main-container {
-    height:45vh;
-    min-height:350px;
+    height:100vh;
+    min-height:600px;
     text-align: center;
     align-items: center;
     margin: 0px;
-    padding-top: 400px;
     background-image:url("../img/sunset.jpg");
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -126,8 +130,8 @@ ul {
 
 .box-center {
     justify-content: space-around;
-    position: relative; 
-    bottom: -150px;
+    position: absolute; 
+    bottom: 0px;
     left: 50%;
     color: black;
     width: 75%;
@@ -136,6 +140,7 @@ ul {
     transform: translate(-50%,-50%);
     align-items: center;
     height: 200px;
+    top: 70vh;
 }
 
 .app-name {
@@ -161,6 +166,7 @@ ul {
     align-items: center;
     margin-top: 10px;
     transition: font-weight  0.5s;
+    z-index: -20;
 }
 
 .go-to-app:hover {
@@ -169,32 +175,64 @@ ul {
 }
 
 .card {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
     margin-top: 10px;
     margin-left: 10px;
     padding: 10px 10px;
-    width: 200px;
-    height: 100%;
+    width: 20%;
+    min-width: 100px;
+    height: 90%;
     color: white;
     box-sizing: border-box;
     transition:margin-top .2s;
-    flex-direction:column-reverse;
     font-size:.75em;
-    border-bottom: 2px solid whitesmoke;
+    cursor:pointer;
+    text-align: center;    
+}
+
+.card span{
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
 }
 
 .card:hover {
     margin-top:-20px;
+    border: 1px solid white;
 }
 
-.card img{
-    width:70%;
+.card img {
+    width:50%;
+    min-width: 60px;
+    margin-top: 10px;
 }
 
-.side-bar{
-    display:none;
+.card-lable {
+    position: fixed;
+    left: 50%;
+    width:80%;
+    height: 70vh;
+    margin-top:0px;
+    visibility:hidden;
+    background-image:url("../img/background-mountain-night.png");
+    background-size:100% 140%;
+    transform: translate(-50%,-70%); 
+    transition: all .05s ease-in-out;
+    margin-top:100px;
+    border-radius:15px;
+    pointer-events:none;
+    z-index: 9999;
+    direction: block;
+}
+
+.card-x {
+    visibility: inherit;
+    position:relative;
+    left: 0%;
+    width:60px;
+    height:60px;
+    background-color:red;
+    color:white;
+    border-radius: 10px;
 }
 
 .text{
@@ -208,7 +246,12 @@ ul {
 
 }
 
-#footer{
+.footer{
     margin:0px;
+    color: blue;
 }
 
+.main {
+    font-size: 120%;
+
+}
