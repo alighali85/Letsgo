@@ -43,7 +43,7 @@ $(document).ready(function () {
         $(slide).css('visibility', 'hidden');
     });
 
-    $('.new-project').click(function () {
-        $()
+    $('.add-new').click(function () {
+        $('#new-project').css('visibility', 'visible');
     })
 })
