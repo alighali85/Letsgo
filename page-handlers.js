@@ -15,6 +15,11 @@ $(document).ready(function () {
         }
     };
 
+    $("a[href='#top']").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
     $(window).on("scroll", function () {
         if ($(this).scrollTop() > 100) {
             $(".header-container").css("background", "#2A2B49");
@@ -44,6 +49,15 @@ $(document).ready(function () {
     });
 
     $('.add-new').click(function () {
-        $('#new-project').css('visibility', 'visible');
-    })
+
+        if ($('.full-page-slide').css('top') === '-50vh') {
+            $('.full-page-slide').css({ visibility: 'visible', top: '50%' });
+        } else {
+            $('.full-page-slide').css({ visibility: 'visible', top: '-50%' });
+        }
+    });
+
+    $('.full-page-slide span').click(function () {
+        $('.full-page-slide').css({ visibility: 'visible', top: '-70vh' });
+    });
 })
