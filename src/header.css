@@ -108,9 +108,10 @@ ul {
   margin-left: 20px;
 }
 
-#new-project{
+#new-project , .full-page-slide{
     height:100vh;
     background-color:white;
+    visibility:hidden;
     z-index: 9999;
 }
 .main-container {
