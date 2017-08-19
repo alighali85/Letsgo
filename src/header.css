@@ -123,14 +123,13 @@ ul {
     background-color:white;
     visibility:visible;
     width: 80vw;
-    z-index: 10;
+    z-index: 101;
     transition: top 0.1s ease-in-out;
     font-family: 'Maven Pro', sans-serif;
     padding-top: 10px;
     color: black;
     box-shadow: -2px 0px 10px 1px gray;
-    border-radius:10px;
-    color:darkmagenta
+    color:darkmagenta;
 }
 
 .main-container {
