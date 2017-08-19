@@ -15,10 +15,15 @@ $(document).ready(function () {
         }
     };
 
+    $("a[href='#top']").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
     $(window).on("scroll", function () {
         if ($(this).scrollTop() > 100) {
             $(".header-container").css("background", "#2A2B49");
-            $(".header-container").css("z-index", "9999");
+            $(".header-container").css("z-index", "99");
         } else {
             $(".header-container").css("background", "none");
         }
@@ -44,6 +49,16 @@ $(document).ready(function () {
     });
 
     $('.add-new').click(function () {
-        $('#new-project').css('visibility', 'visible');
-    })
+        if ($('.full-page-slide').css('top') !== '-70vh') {
+            $('.full-page-slide').css({ visibility: 'visible', top: '50%' });
+            $('.dem').css('visibility', 'visible');
+        } else {
+            $('.full-page-slide').css({ visibility: 'visible', top: '-50%', zIndex: '101' });
+        }
+    });
+
+    $('.full-page-slide span').click(function () {
+        $('.full-page-slide').css({ visibility: 'visible', top: '-70vh' });
+        $('.dem').css('visibility', 'hidden');
+    });
 })
