@@ -59,6 +59,6 @@ $(document).ready(function () {
 
     $('.full-page-slide span').click(function () {
         $('.full-page-slide').css({ visibility: 'visible', top: '-70vh' });
-        $('.dem').css('visibility', 'hidden');
+        $('.dem').css({ visibility: 'hidden' });
     });
 })
