@@ -134,6 +134,48 @@ ul {
     100%{opacity: 0.9}
 }
 
+.full-page-slide form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    left:40px;
+    top:10vh;
+}
+
+label{
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.full-page-slide input[type="text"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    text-align: left; 
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #2A2B49;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:18px;
+    transform: all 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background-color: #11b2B5;
+}
+
 .full-page-slide {
     display: flex;
     flex-flow:column;
