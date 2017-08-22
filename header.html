@@ -11,12 +11,30 @@
 
 <body>
     <div class="dem"></div>
-    <div class="full-page-slide" id="new-project"> <span class="close-btn"><h1>Welcome to new project page</h1></span>
+    <div class="full-page-slide" id="new-project">
+        <div class="form-header">
+            <h1><span>Great.. Your first step</span></h1>
+            <botton class="close-btn">close</botton>
+        </div>
+        <div class="form-footer">
+            <div> Next </div>
+            <div> Previous</div>
+            <botton class="close-btn">close</botton>
+        </div>
+
         <form action="post">
-            <label>Idea Name <input type="text" name="idea-name"></label>
-            <label>Descripe your Idea <input type="text" name="idea-description"></label>
-            <input type="text" name="idea-icon">
-            <input type="submit" value="save and continue">
+            <div class="form-container">
+                <div class="form-left">
+                    <label>Idea Name <input type="text" name="idea-name"></label>
+                    <label>Descripe your Idea <textarea type="text" name="idea-description"></textarea></label>
+                    <input type="submit" value="save and continue">
+                </div>
+                <div class="form-right">
+                    <img src="./img/sea.png" height="200px" width="200px">
+                    <input type="text" name="idea-icon" placeholder="">
+                </div>
+            </div>
+
         </form>
     </div>
     <div class="header-container">

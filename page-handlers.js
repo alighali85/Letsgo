@@ -57,7 +57,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.full-page-slide span').click(function () {
+    $('.close-btn').click(function () {
         $('.full-page-slide').css({ visibility: 'visible', top: '-70vh' });
         $('.dem').css({ visibility: 'hidden' });
     });
