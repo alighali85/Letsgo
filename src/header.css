@@ -134,46 +134,68 @@ ul {
     100%{opacity: 0.9}
 }
 
-.full-page-slide form {
+.full-page-slide form, .form-container {
+    padding:10px;
+    width: 95;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    position: relative;
-    left:40px;
     top:10vh;
 }
+
+.form-left {
+    margin-right: 20px;
+    /*! border: 2px solid lightgray; */
+    padding: 10px;
+    flex-direction: column;
+    flex: 1;
+    align-self: flex-start;
+}
+
+.form-right {
+    margin-right: 0;
+    border-left: 3px solid lightgray;
+    padding: 20px;
+    flex: 0.5;
+    flex-direction: column;
+    align-self: flex-start;
+}
+    
 
 label{
     text-align: left;
     margin: 20px 0px;
 }
 
-.full-page-slide input[type="text"]{
+.full-page-slide input[type="text"], textarea {
+    max-height: 15vh;
+    max-width: 50vw;
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    /*! margin: 8px 0; */
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 20px;
+    margin-top: 5px;
     text-align: left; 
 }
 
-input[type=submit] {
-    width: 100%;
-    background-color: #2A2B49;
+input[type="submit"] {
+    width: 50%;
+    background-color: #FF4F70;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size:18px;
-    transform: all 0.3s ease;
+    transition: background-color 0.2s ease-in-out;
+    margin-bottom: 0px;
+    bottom: 0px;
+    margin-top: 33px;
 }
 
-input[type=submit]:hover {
-    background-color: #11b2B5;
+input[type="submit"]:hover {
+    background-color: #FF787E;
 }
 
 .full-page-slide {
@@ -182,7 +204,7 @@ input[type=submit]:hover {
     align-items: center;
     text-align: center;
     height:80vh;
-    top:-70vh;
+    top: -70vh;
     left:50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -191,12 +213,63 @@ input[type=submit]:hover {
     visibility:visible;
     width: 80vw;
     z-index: 101;
-    transition: top 0.1s ease-in-out;
+    transition: top 0.3s cubic-bezier(.46,.03,.52,.96);
     font-family: 'Maven Pro', sans-serif;
-    padding-top: 10px;
     color: black;
     box-shadow: -2px 0px 10px 1px gray;
-    color:darkmagenta;
+    color:#FF787E;
+}
+
+.full-page-slide .form-header{
+    border-bottom: 4px solid lightgray;
+    width: 100%;
+    left: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-header h1{
+    position: relative;
+}
+
+.form-header botton{
+    font-size: 14px;
+    right:10px;
+    color: white;
+    background-color: gray;
+    position: absolute;
+    cursor:pointer;
+    padding-bottom: 8px;
+    padding:10px;
+    border-bottom : 1px solid #FF4F70;
+    transition:all 0.2s cubic-bezier(1,-0.1,.5,1.39);
+}
+
+botton:hover{
+    font-size: 16px;
+    padding:20px;
+    color:white;
+    background-color: #FF4F70;
+}
+
+.full-page-slide .form-footer{
+    width: 100%;
+    top: 100%;
+    height: 20vh;
+    position: absolute;
+    display:block;
+    justify-content: space-around;
+    align-items: center;
+    left: 0px;
+    transform:translate(-0%, -100%);
+}
+
+label{
+    position: relative;
+    color:gray;
+    margin:0 auto;
+    display: block;
 }
 
 .main-container {
