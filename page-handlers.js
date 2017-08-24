@@ -27,7 +27,7 @@ $(document).ready(function () {
         } else {
             $(".header-container").css("background", "none");
         }
-        if ($(this).scrollBottom() < 100) {
+        if ($(this).scrollDown() < 100) {
             $(".header-container").css("background", "red");
 
         }
@@ -37,7 +37,6 @@ $(document).ready(function () {
         var slide = $('.card-no')[$('.card').index(this)];
         if ($(slide).css('visibility') === 'hidden') {
             $(slide).css('visibility', 'visible');
-            // $('.card').css('pointer-events', 'none');
         } else {
             $(slide).css('visibility', 'hidden');
         };
@@ -61,4 +60,10 @@ $(document).ready(function () {
         $('.full-page-slide').css({ visibility: 'visible', top: '-70vh' });
         $('.dem').css({ visibility: 'hidden' });
     });
-})
+});
+function select() {
+    var $select = $('.drop-down-numbers');
+    for (i = 0; i < 100; i++) {
+        select.append($('<option></option>').val(i).html(i));
+    }
+}

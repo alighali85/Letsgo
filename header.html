@@ -14,6 +14,36 @@
     <div class="full-page-slide" id="new-project">
         <div class="form-header">
             <h1><span>Great.. Your first step</span></h1>
+            <select class="1-100"></select>
+            <botton class="close-btn">close</botton>
+        </div>
+        <div class="form-footer">
+            <div> Next </div>
+            <div> Previous</div>
+            <botton class="close-btn">close</botton>
+        </div>
+
+        <form action="post">
+            <div class="form-container">
+                <div class="form-left">
+
+                    <label>Idea Name <input type="text" name="idea-name" placeholder="give your idea a name"></label>
+                    <label>Descripe your Idea <textarea type="text" name="idea-description"></textarea></label>
+
+                    <input type="submit" value="save and continue">
+                </div>
+                <div class="form-right">
+                    <img src="./img/sea.png" height="200px" width="200px">
+                    <input type="text" name="idea-icon" placeholder="">
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="full-page-slide" id="requirment">
+        <!-- the second slid - - 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 -->
+        <div class="form-header">
+            <h1><span>Great.. Your first step</span></h1>
             <botton class="close-btn">close</botton>
         </div>
         <div class="form-footer">
@@ -27,6 +57,7 @@
                 <div class="form-left">
                     <label>Idea Name <input type="text" name="idea-name"></label>
                     <label>Descripe your Idea <textarea type="text" name="idea-description"></textarea></label>
+                    <select class="drop-down-numbers" onlclick="select()"></select>
                     <input type="submit" value="save and continue">
                 </div>
                 <div class="form-right">
@@ -80,12 +111,9 @@
                 </div>
             </div>
         </div>
-        <div class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id efficitur tellus. Donec porta sed tortor vel tincidunt.
-            In id tempor lacus. Sed velit est, ornare in sapien et, aliquam fermentum turpis. Cras sit amet tellus sed lorem
-            luctus fringilla eu ac odio. Morbi at aliquet turpis. Proin lacus lorem, laoreet sed mauris sit amet, sollicitudin
-            sollicitudin nulla. Nullam lobortis risus felis, vel pulvinar metus consequat ac. In hac habitasse platea dictumst.
-            Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent
-            per conubia nostra, per inceptos himenaeos.
+        <div class="text">
+            <h1> See this Video About life Events</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rpOfVIzATd4" frameborder="0" allowfullscreen></iframe>
         </div>
 </body>
 <center><button id="btn"> click mr </button>
@@ -96,6 +124,7 @@
         Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per
         conubia nostra, per inceptos himenaeos.
     </footer>
+    <select class="select" onlclick="dropDownNumbers()"></select>
 </center>
 
 </div>
