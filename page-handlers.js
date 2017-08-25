@@ -62,7 +62,7 @@ $(document).ready(function () {
     });
 });
 function select() {
-    var $select = $('.drop-down-numbers');
+    var $select = $('.select');
     for (i = 0; i < 100; i++) {
         select.append($('<option></option>').val(i).html(i));
     }
