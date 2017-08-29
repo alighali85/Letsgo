@@ -14,6 +14,7 @@
     <div class="full-page-slide" id="new-project">
         <div class="form-header">
             <h1><span>Great.. Your first step</span></h1>
+            <select class="1-100"></select>
             <botton class="close-btn">close</botton>
         </div>
         <div class="form-footer">
@@ -25,8 +26,10 @@
         <form action="post">
             <div class="form-container">
                 <div class="form-left">
-                    <label>Idea Name <input type="text" name="idea-name"></label>
+
+                    <label>Idea Name <input type="text" name="idea-name" placeholder="Enter email"></label>
                     <label>Descripe your Idea <textarea type="text" name="idea-description"></textarea></label>
+
                     <input type="submit" value="save and continue">
                 </div>
                 <div class="form-right">
@@ -80,12 +83,27 @@
                 </div>
             </div>
         </div>
-        <div class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id efficitur tellus. Donec porta sed tortor vel tincidunt.
-            In id tempor lacus. Sed velit est, ornare in sapien et, aliquam fermentum turpis. Cras sit amet tellus sed lorem
-            luctus fringilla eu ac odio. Morbi at aliquet turpis. Proin lacus lorem, laoreet sed mauris sit amet, sollicitudin
-            sollicitudin nulla. Nullam lobortis risus felis, vel pulvinar metus consequat ac. In hac habitasse platea dictumst.
-            Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent
-            per conubia nostra, per inceptos himenaeos.
+        <!-- here is the parts :::::::::::::::: :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
+
+        <!-- here is the parts :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  PART :: 1 ::-->
+        <div class="main-part" id="part1">
+            <h1> part one </h1>
+        </div>
+        <!-- here is the parts :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  PART :: 2 ::-->
+        <div class="main-part" id="part2">
+            <h1>part two </h1>
+        </div>
+        <!-- here is the parts :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  PART :: 3 ::-->
+        <div class="main-part" id="part3">
+            <h1>part three </h1>
+        </div>
+        <!-- here is the parts :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  PART :: 4 ::-->
+        <div class="main-part" id="part4">
+            <h1>part four </h1>
+        </div>
+        <div class="text">
+            <h1> See this Video About life Events</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rpOfVIzATd4" frameborder="0" allowfullscreen></iframe>
         </div>
 </body>
 <center><button id="btn"> click mr </button>
@@ -96,6 +114,7 @@
         Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per
         conubia nostra, per inceptos himenaeos.
     </footer>
+    <select class="select" onlclick="dropDownNumbers()"></select>
 </center>
 
 </div>
