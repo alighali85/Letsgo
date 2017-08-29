@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     $(window).on("scroll", function () {
         if ($(this).scrollTop() > 100) {
-            $(".header-container").css("background", "#2A2B49");
+            $(".header-container").css("background", "linear-gradient(to right, #FF070B, #E5008D, #000000)");
             $(".header-container").css("z-index", "99");
         } else {
             $(".header-container").css("background", "none");
@@ -61,8 +61,9 @@ $(document).ready(function () {
         $('.dem').css({ visibility: 'hidden' });
     });
 });
+
 function select() {
-    var $select = $('.select');
+    var select = $('.select');
     for (i = 0; i < 100; i++) {
         select.append($('<option></option>').val(i).html(i));
     }
