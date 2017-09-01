@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,600,800" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 @-ms-viewport{
   width: device-width;
 }
@@ -25,7 +26,9 @@ body {
     justify-content:space-between;
     align-items: center;
     color: white;
-    transition: background 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
     }
 
 .headerBg {
