@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,600,800" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@-ms-viewport{
+  width: device-width;
+}
+
+body {
+    margin:0px;
+    padding: 0px;
+}
+
+::-moz-placeholder {
+    color:lightgray;
+}
+:-moz-placeholder {
+    color:lightgray;
+}
+::-webkit-input-placeholder {
+    color:lightgray;
+}
+::-ms-input-placeholder {
+    color:lightgray;
+}
+input:-moz-input-placehplder-shown {
+    border: 2px solid red;
+}
+
+.page-wraper {
+    width:100vw;
+    margin: 0 auto;
+}
+
+.page-header {
+    width:100vw;
+    left:0px;
+    display: block;
+    background-color: #FAFAFA;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3em;
+    font-weight: 200;
+    color:gray;
+    border-bottom: 1px solid darkgray;
+    margin-bottom: 0.3em;
+}
+
+.page-body {
+    width:100vw;
+    margin: 0 auto;
+    display: block;
+}
+
+.create-idea-form {
+    height: 200px;
+    width: 232px;
+    margin: 5px;
+    background-color: #FAFAFA;
+    border:none;
+    left:50%;
+    position: relative;
+    transform: translate(-50%,0);
+}
+
+.create-idea-form img{
+    width: 232px;
+    height: 200px;
+    background-image: url('./img/idea.png');
+    background-position: center;
+    min-height: 232px;
+    min-height: 232px;
+    border-radius:50%;
+}
+
+.create-idea-form #idea-name {
+    padding: 0.1em 0.6em;
+    height: 2em;
+    width: 600px;
+    margin-top: 10px;
+    background-color: #FAFAFA;
+    border: 1px solid gray;
+    left:50%;
+    position: relative;
+    transform: translate(-50%,0);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    color: lightseagreen;
+}
+
+.create-idea-form #idea-description {
+    padding: 0.1em 0.6em;
+    height: 6em;
+    width: 600px;
+    margin-top: 10px;
+    background-color: #FAFAFA;
+    border: 1px solid gray;
+    left:50%;
+    position: relative;
+    transform: translate(-50%,0);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 200;
+    color: lightseagreen;
+}
+
+input:placeholder-shown {
+  border: 5px solid red;
+}
+
+.create-idea-form button {
+    padding: 0.1em 0.6em;
+    height: 2em;
+    width: 600px;
+    margin-top: 10px;
+    background-color: lightseagreen;
+    border: 1px solid seagreen;
+    left:50%;
+    position: relative;
+    transform: translate(-50%,0);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

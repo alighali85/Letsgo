@@ -22,14 +22,10 @@ $(document).ready(function () {
 
     $(window).on("scroll", function () {
         if ($(this).scrollTop() > 100) {
-            $(".header-container").css("background", "linear-gradient(to right, #FF070B, #E5008D, #000000)");
+            $(".header-container").css("background", "#C2185B");
             $(".header-container").css("z-index", "99");
         } else {
             $(".header-container").css("background", "none");
-        }
-        if ($(this).scrollDown() < 100) {
-            $(".header-container").css("background", "red");
-
         }
     });
 
