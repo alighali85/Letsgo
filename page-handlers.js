@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     $(window).on("scroll", function () {
         if ($(this).scrollTop() > 100) {
-            $(".header-container").css("background", "#C2185B");
+            $(".header-container").css("background", "#EC407A");
             $(".header-container").css("z-index", "99");
         } else {
             $(".header-container").css("background", "none");
