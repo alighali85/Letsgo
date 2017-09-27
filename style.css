@@ -128,7 +128,7 @@ float:right;
 
 a  { color: inherit; text-decoration: none } 
 
-li{ 
+li { 
     display:inline-block;
     font-family: 'Yantramanav',sans-serif;
     font-size: 1em;
@@ -144,6 +144,7 @@ li{
 	-moz-transition: all .5s;
 	transition: all .5s;
 }
+
 li:hover > a{
     color:#cc0052;
     border-color: #cc0052;
